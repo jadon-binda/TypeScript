@@ -5,3 +5,6 @@ const product: {description: string, lot: number, year: number, qty: number} = {
     qty: 5
 };
 
+const labelPrint = (product: {description: string, lot: number, year: number, qty: number}): string[] => {
+    
+};
