@@ -1,9 +1,14 @@
+function isString(value: string | number | Date | null): value is string {
+    return typeof value === "string";
+}
+// abstração da validação do tipo de dado
+
 function date (param: string | number | Date | null) {
     if (param === null) {
         console.log(`${param} is null`);        
     }
 
-    if (typeof param === "string") {
+    if (isString(param)) {
         console.log(`${param} is string`);        
     }
 
@@ -26,12 +31,12 @@ type Person = {
 }
 
 const hello = (person: Person) => {
-    // verifica se existe a propriedade 'age' dentro do objeto person
     if ('age' in person) {
-        // verifica se um valor válido foi informado para a propriedade 'age'
+        // verifica se existe a propriedade 'age' dentro do objeto person
         if (person.age) {
-            // como a propriedade 'age' existe e possui um valor, agora posso manipulá-la
+            // verifica se um valor válido foi informado para a propriedade 'age'
             console.log(person.age);
+            // como a propriedade 'age' existe e possui um valor, agora posso manipulá-la
         }
     }
 }
