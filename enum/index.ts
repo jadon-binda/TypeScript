@@ -12,11 +12,11 @@ enum Resposta {
 }
 console.log(Resposta.YES);
 
-enum Transaction {
+enum Transaction1 {
     DEBIT = "Você efetuou uma compra no Débito.",
     CREDIT = "Você efetuou uma compra no Crédito."
 }
-console.log(Transaction.DEBIT);
+console.log(Transaction1.DEBIT);
 
 enum WeekDays {
     Sunday,

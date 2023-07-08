@@ -25,13 +25,13 @@ const transaction = (transaction: Transaction) => {
 }
 console.log(transaction({name: "Jadon", operation: "Debit"}));
 
-type User = {
+type User2 = {
     name: string,
     email?: string,
     status: true | false,
 }
 
-const verifyStatusUser = (user: User) => {
+const verifyStatusUser = (user: User2) => {
     return user.status;
 }
 console.log(verifyStatusUser({name: "Brisa", status: true}));

@@ -1,4 +1,4 @@
-type Address = {
+type Address1 = {
     street: string,
     number: number,
     complement: string,
@@ -14,13 +14,13 @@ type User = {
     age: number, 
     email: string, 
     cpf: string, 
-    address?: Address,
+    address?: Address1,
 };
 
 const userRegister = (user: User) => {
     return user;
 };
 
-let user = {name: "Jadon", age: 30, email: "jadon.binda@gmail.com", cpf: "00011122233"};
+let user1 = {name: "Jadon", age: 30, email: "jadon.binda@gmail.com", cpf: "00011122233"};
 
-console.log(userRegister(user));
+console.log(userRegister(user1));
