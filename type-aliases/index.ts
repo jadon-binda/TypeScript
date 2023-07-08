@@ -9,7 +9,7 @@ type Address1 = {
     cep: number,
 };
 
-type User = {
+type Usuario = {
     name: string, 
     age: number, 
     email: string, 
@@ -17,7 +17,7 @@ type User = {
     address?: Address1,
 };
 
-const userRegister = (user: User) => {
+const userRegister = (user: Usuario) => {
     return user;
 };
 
