@@ -28,10 +28,10 @@ const listUsers = (): User[] => {
 };
 
 const newUser = registerUser({
-    name: 'Jadon',
-    email: 'jadon@email.com',
-    cpf: '12345678900',
-    job: 'Web Developer',
+    name: 'Kátia',
+    email: 'katia@email.com',
+    cpf: '12345678901',
+    job: 'Lawyer',
     address: {
         cep: '0123456',
         street: 'Rua Imaginaria',
@@ -42,3 +42,5 @@ const newUser = registerUser({
 });
 
 console.log(newUser, listUsers());
+
+export {User};
