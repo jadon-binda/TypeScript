@@ -1,15 +1,17 @@
 const fs = require('fs');
+// import {readFileSync, writeFileSync} from 'node:fs';
 
 const readFile = (): unknown => {
-    return JSON.parse(fs.readFileSync('bd.json'));
+    return JSON.parse(fs.readFileSync('../bd.json'));
 }
 
-const writeFile = (data: unknown): void => {
-    fs.writeFileSync('bd.json', JSON.stringify(data))
+const writeFile = (data: any): void => {
+    fs.writeFileSync('../bd.json', JSON.stringify(data))
 }
 
-const info = readFile() as string[];
+/* const addInfo = readFile() as string[];
+addInfo.push('Love');
+writeFile(addInfo);
+console.log(readFile()); */
 
-info.push('Love');
-writeFile(info);
-console.log(readFile());
+export {readFile, writeFile};
