@@ -1,4 +1,4 @@
-import { User } from '../register-and-list-users';
+import { User } from '../type-user';
 import { readFile, writeFile } from '../read-and-write-in-files';
 
 const detailUser = (cpf: string): User => {
