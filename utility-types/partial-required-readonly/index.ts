@@ -8,14 +8,18 @@ type User = {
     return user;
 }; */
 
-const registerUser = (user: Required<User>) => {
+/* const registerUser = (user: Required<User>) => {
+    return user;
+}; */
+
+const registerUser = (user: Partial<User>) => {
     return user;
 };
 
 const person = {
-    name: 'Zezinho',
-    email: 'zezin@email.com',
-    age: 25
+    // name: 'Zezinho',
+    // email: 'zezin@email.com',
+    // age: 25
 };
 
 console.log(registerUser(person));
