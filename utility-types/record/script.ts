@@ -5,7 +5,7 @@ type Auto = {
 
 type Models = 'Civic' | 'Gol' | 'Fusca';
 
-// Example of Record
+// Example of Record<Keys, Type>
 const Cars: Record<Models, Auto> = {
     Civic: {
         year: 2023,
