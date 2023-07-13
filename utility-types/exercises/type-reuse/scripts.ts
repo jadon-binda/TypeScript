@@ -1,11 +1,13 @@
-type Usuario = {
+type NovoUsuario = {
     nome: string,
     email: string,
     cpf: string,
-    rg: string
-    dataNacimento?: string
+    rg: string,
+    dataNascimento?: string | null,
 }
 
-const cadastrarUsuário = (info: Usuario): Usuario => {
+type UsuarioSemRG = Required<Omit<NovoUsuario, 'rg'>>;
+
+const cadastrarUsuário = (info: NovoUsuario): NovoUsuario => {
     return info;
 }
