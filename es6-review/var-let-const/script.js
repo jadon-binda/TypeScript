@@ -48,4 +48,34 @@ let nome3;
 if(true) {
     nome3 = 'Julito';
 }
-console.log(nome3);
+//console.log(nome3);
+
+// *****************************************************************************************************************************************************************************
+
+// a const não permite apenas ser declarada, obrigatoriamente você deve atribuir um valor a ela na sua declaração
+// porque se trata de uma constante, que possui valor único e que não aceita alterações deste valor atribuído
+// const nome4;
+// nome4 = 'Kátia';
+
+// o correto é declarar a const e já atribuir o seu valor
+const nome4 = 'Kátia';
+
+// a const não permite redeclarações, pois trata-se de um valor único
+// const nome4 = 'Delane';
+
+// não é possível atribuir um novo valor a uma const, nem mesmo dentro de outro escopo
+/* if(true) {
+    nome4 = 'Pereira';
+} */
+
+// a const também pertence ao escopo local, por isso deve-se observar em qual contexto você a está utilizando
+// porém, como não pode ser atribuído um valor a uma const depois, você deve usá-la sempre dentro do escopo em que ela está
+if(true) {
+    const nome4 = 'Pereira';
+}
+//console.log(nome4);
+
+if(true){
+    const nome5 = 'Barros';
+    console.log(nome5);
+}
