@@ -79,3 +79,23 @@ if(true){
     const nome5 = 'Barros';
     console.log(nome5);
 }
+
+// *****************************************************************************************************************************************************************************
+
+// Diferença entre Escopo Global e Escopo Local
+
+/* 
+Escopo é um contexto delimitante dentro do qual, variáveis e expressões estão associadas. 
+
+Escopo Global é o contexto de todo o código. 
+
+Escopo Local é o contexto dentro de uma função, estrutura de repetição, estrutura condicional, dentro de um objeto, etc. 
+Pra simplificar é tudo que está entre as chaves { ... }.
+
+Var pertence ao Escopo Global, por isso tudo é permissível, você consegue manipular a variável dentro do escopo global ou dentro do escopo local.
+
+Let e Const pertencem ao escopo local, por isso você só consegue manipular ou utilizar a variável dentro daquele escopo onde a criou.
+
+Por essa razão, é recomendado o uso de Let e Const ao invés de Var.
+Dessa maneira, você não permite que uma variável criada anteriormente seja sobrescrita, o que evita inconsistências e problemas no seu código.
+*/
